@@ -12,7 +12,7 @@ variable "subnet_address_prefixes" {
 }
 
 module "networking" {
-  source  = "app.terraform.io/SOME_ORG/networking/azurerm"
+  source  = "aa-training.digitalinnovation.dev/paragbhardwaj-org/networking/azurerm"
   version = "0.0.1"
 
   name                    = "${var.name}"
@@ -22,7 +22,7 @@ module "networking" {
 }
 
 module "webserver" {
-  source  = "app.terraform.io/SOME_ORG/webserver/azurerm"
+  source  = "aa-training.digitalinnovation.dev/paragbhardwaj-org/webserver/azurerm"
   version = "0.0.1"
 
   name      = "${var.name}"
